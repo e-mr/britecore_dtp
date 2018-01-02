@@ -10,77 +10,116 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="britecore_dtp.js"></script>
 </head>
+
 <body>
   <header>
-    <h1></h1>
+    <h1>BriteCore Form Builder</h1>
   </header>
+
   <div class="row">
-    <div class="column field">
+    <section class="column field">
       <h2>Form Fields</h2>
       <hr>
       <button class="input-type">
-        <i class="fa fa-user-o" aria-hidden="true"></i> Name
+        <i class="fa fa-user-o" aria-hidden="true"></i>
+        Name
       </button>
       <button class="input-type">
-        <i class="fa fa-address-card-o" aria-hidden="true"></i> Address
+        <i class="fa fa-address-card-o" aria-hidden="true"></i>
+        Address
       </button>
       <button class="input-type">
-        <i class="fa fa-calendar" aria-hidden="true"></i> Date
+        <i class="fa fa-calendar" aria-hidden="true"></i>
+        Date
       </button>
       <button class="input-type">
-        <i class="fa fa-usd" aria-hidden="true"></i> Currency
+        <i class="fa fa-usd" aria-hidden="true"></i>
+        Currency
       </button>
       <button class="input-type">
-        <i class="fa fa-text-width" aria-hidden="true"></i> Text Field
+        <i class="fa fa-text-width" aria-hidden="true"></i>
+        Text Field
       </button>
       <button class="input-type">
-        <i class="fa fa-hashtag" aria-hidden="true"></i> Number
+        <i class="fa fa-hashtag" aria-hidden="true"></i>
+        Number
       </button>
       <button class="input-type">
-        <i class="fa fa-envelope-o" aria-hidden="true"></i> Email
+        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        Email
       </button>
       <button class="input-type">
-        <i class="fa fa-dot-circle-o" aria-hidden="true"></i> Single Option
+        <i class="fa fa-dot-circle-o" aria-hidden="true"></i>
+        Single Option
       </button>
       <button class="input-type">
-        <i class="fa fa-check-square-o" aria-hidden="true"></i> Multiple Option
+        <i class="fa fa-check-square-o" aria-hidden="true"></i>
+        Multiple Option
       </button>
       <button class="input-type">
-        <i class="fa fa-upload" aria-hidden="true"></i> File Upload
+        <i class="fa fa-upload" aria-hidden="true"></i>
+        File Upload
       </button>
-    </div>
-    <section class="column form-preview" ondragover="showBox(event)">
+    </section>
+
+    <section class="column form-preview">
       <h2>Form Builder</h2>
       <hr>
         <form>
-          <label>First Name
-            <input type="text" name="firstname">
-          </label>
-          <label>Last Name
-            <input type="text" name="lastname">
-          </label>
-          <label>Street Address
-            <input type="text" name="address">
-          </label>
-          <label>Apt #
-            <input type="text" name="apt">
-          </label>
-          <label>ZIP CODE
-            <input type="text" name="zipcode">
-          </label>
-          <label>City
-            <input type="text" name="city">
-          </label>
-          <label>State
-            <input type="text" name="state">
-          </label>
-          <label class="date-selected">Date of Birth
+          <div class="name">
+            <label>
+              First Name
+              <input type="text" name="firstname">
+            </label>
+            <label>
+              Last Name
+              <input type="text" name="lastname">
+            </label>
+          </div>
+
+          <div class="address">
+            <label>
+              Street Address
+              <input type="text" name="address">
+            </label>
+            <label>
+              Apt #
+              <input class="small-text" type="text" name="apt">
+            </label>
+            <label>
+              City
+              <input type="text" name="city">
+            </label>
+            <label>
+              State
+              <!-- ideally I would make this a select option -->
+              <input type="text" name="state">
+            </label>
+            <label>
+              Zip Code
+              <input class="small-text" type="text" name="zipcode">
+            </label>
+          </div>
+
+          <label>
+            Date of Birth
             <input type="date" name="bday">
           </label>
           <button class="next">
-            Next <i class="fa fa-angle-right" aria-hidden="true"></i>
+            Next
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
           </button>
         </form>
+      <div class="form-buttons">
+        <button class="edit">
+          <i class="fa fa-pencil" aria-hidden="true"></i>
+          Edit Form
+        </button>
+        <button class="save">
+          <i class="fa fa-check" aria-hidden="true"></i>
+          Save Form
+        </button>
+      </div>
     </section>
   </div>
 </body>

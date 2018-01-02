@@ -1,6 +1,5 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
+/* Begin CSS Reset
+   source: http://meyerweb.com/eric/tools/css/reset/
 */
 
 html, body, div, span, applet, object, iframe,
@@ -46,37 +45,37 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* end of css reset */
+/* End of CSS Reset */
 
-
-.column {
-  float: left;
+h1 {
+  background: transparent url(http://demo.britecore.com/static/images/britecore-logo.png) no-repeat center center;
+  color: transparent;
+  background-size: contain;
+  margin-left: 2rem;
 }
 
-.row {
+header {
   display: flex;
+  height: 5rem;
+  width: 100%;
 }
 
-.field {
-  width:25%;
-  padding: 1.75rem;
-  margin: 2rem;
-  background-color: #DFDFDF;
-  border-radius: 0.25rem;
+h2 {
+  font-size: 1.3rem;
+  color: #494949;
 }
 
-.form-preview {
-  width: 75%;
-  margin: 2rem;
-  margin-left: 0rem;
+h2, button, label{
+  font-family: 'Roboto', sans-serif;
+}
+
+form, input {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.field, .form-preview {
   padding: 2rem;
   background-color: #E6EEEF;
-  border-radius: 0.25rem;
-}
-
-img {
-  padding: 1.5rem;
-  width: 5rem;
 }
 
 button {
@@ -86,66 +85,96 @@ button {
   margin-bottom: 0.75rem;
   font-weight: 300;
   font-size: 0.85rem;
-  font-family: 'Roboto', sans-serif;
   text-decoration: none;
   background-color: #018298;
   color: #FFFFFF;
-}
-
-.input-type {
-  width: 10rem;
-}
-
-h1 {
-  background: url(http://demo.britecore.com/static/images/britecore-logo.png) no-repeat center center;
-  color: transparent;
-  background-size: contain;
-  display: block;
-  width: 20%;
-margin-left: 2rem;
-}
-
-h2 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.3rem;
-  color: #494949;
-}
-
-header {
-  display: flex;
-  height: 5rem;
-  width: 100%;
-}
-
-body {
-  background-color: #FFFFFF;
-}
-
-form {
-  font-family: 'Source Sans Pro', sans-serif;
 }
 
 input {
   padding:0.7rem;
   border-radius: 0.25rem;
   font-size:1.1rem;
-  font-family: 'Source Sans Pro', sans-serif;
   width: 18rem;
-  border: solid 0.04rem #5E5E5E;
+  border: solid 0.04rem #A8A8A8;
   margin-bottom: 1.25rem;
   display: flex;
 }
 
+.input-type {
+  width: 10rem;
+}
+
 label {
-  font-family: 'Roboto', sans-serif;
   font-size: 0.95rem;
   font-weight: 300;
+}
+
+.small-text {
+  width: 5rem;
 }
 
 hr {
   margin-bottom: 1.5rem;
 }
 
-.date-selected {
-  display: none;
+.name, .address {
+  display: block;
+}
+
+.edit, .save {
+  background-color: #374F53;
+  border-color: #374F53;
+  padding: 1.2rem 1.5rem;
+}
+
+.edit {
+  margin-right: 0.65rem;
+}
+
+.form-buttons {
+  text-align: right;
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 48rem) {
+  .row {
+    display: flex;
+  }
+
+  .column {
+    float: left;
+  }
+
+  .field {
+    width:20%;
+    padding: 1.75rem;
+    background-color: #DFDFDF;
+  }
+
+  .form-preview {
+    width: 75%;
+    padding: 2rem;
+    background-color: #E6EEEF;
+  }
+
+  .name, .address {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  input[name="firstname"], input[name="address"], input[name="apt"], input[name="city"], input[name="state"]{
+    margin-right: 1rem;
+  }
+
+  input[name="address"] {
+    width: 32rem;
+  }
+
+  input[name="city"] {
+    width: 18rem;
+  }
+
+  input[name="state"] {
+    width: 11.5rem;
+  }
 }
