@@ -3,9 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <title>BriteCore Design Team Project</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="britecore_dtp.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="britecore_dtp.js"></script>
 </head>
 <body>
-  <img src="http://demo.britecore.com/static/images/britecore-logo.png" alt="BriteCore Logo">
+  <header>
+    <h1></h1>
+  </header>
+  <div class="row">
+    <div class="column field">
+      <h2>Form Fields</h2>
+      <hr>
+      <button class="input-type">
+        <i class="fa fa-user-o" aria-hidden="true"></i> Name
+      </button>
+      <button class="input-type">
+        <i class="fa fa-address-card-o" aria-hidden="true"></i> Address
+      </button>
+      <button class="input-type">
+        <i class="fa fa-calendar" aria-hidden="true"></i> Date
+      </button>
+      <button class="input-type">
+        <i class="fa fa-usd" aria-hidden="true"></i> Currency
+      </button>
+      <button class="input-type">
+        <i class="fa fa-text-width" aria-hidden="true"></i> Text Field
+      </button>
+      <button class="input-type">
+        <i class="fa fa-hashtag" aria-hidden="true"></i> Number
+      </button>
+      <button class="input-type">
+        <i class="fa fa-envelope-o" aria-hidden="true"></i> Email
+      </button>
+      <button class="input-type">
+        <i class="fa fa-dot-circle-o" aria-hidden="true"></i> Single Option
+      </button>
+      <button class="input-type">
+        <i class="fa fa-check-square-o" aria-hidden="true"></i> Multiple Option
+      </button>
+      <button class="input-type">
+        <i class="fa fa-upload" aria-hidden="true"></i> File Upload
+      </button>
+    </div>
+    <section class="column form-preview" ondragover="showBox(event)">
+      <h2>Form Builder</h2>
+      <hr>
+        <form>
+          <label>First Name
+            <input type="text" name="firstname">
+          </label>
+          <label>Last Name
+            <input type="text" name="lastname">
+          </label>
+          <label>Street Address
+            <input type="text" name="address">
+          </label>
+          <label>Apt #
+            <input type="text" name="apt">
+          </label>
+          <label>ZIP CODE
+            <input type="text" name="zipcode">
+          </label>
+          <label>City
+            <input type="text" name="city">
+          </label>
+          <label>State
+            <input type="text" name="state">
+          </label>
+          <label class="date-selected">Date of Birth
+            <input type="date" name="bday">
+          </label>
+          <button class="next">
+            Next <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </button>
+        </form>
+    </section>
+  </div>
 </body>
 </html>
