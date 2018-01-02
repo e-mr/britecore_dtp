@@ -65,11 +65,19 @@ h2 {
   color: #494949;
 }
 
+h3 {
+  font-size: 0.9rem;
+  color: #017084;
+  margin-top: 0.8rem;
+  font-style: italic;
+  line-height: 1rem;
+}
+
 h2, button, label{
   font-family: 'Roboto', sans-serif;
 }
 
-form, input {
+h3, form, input {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -94,7 +102,7 @@ input {
   padding:0.7rem;
   border-radius: 0.25rem;
   font-size:1.1rem;
-  width: 18rem;
+  width: 30rem;
   border: solid 0.04rem #A8A8A8;
   margin-bottom: 1.25rem;
   display: flex;
@@ -104,6 +112,32 @@ input {
   width: 10rem;
 }
 
+.edit-fields {
+  width: 100%;
+  text-align: right;
+}
+
+.field-edit, .field-delete {
+  border-radius: 1.5rem;
+  padding: 0.9rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 0.8rem;
+}
+
+.field-edit {
+  display: inline-block;
+  margin-right: 0.5rem;
+  margin-bottom: 3rem;
+  background-color: #008A00;
+}
+
+
+
+.field-delete {
+  background-color: #B80000;
+}
+
 label {
   font-size: 0.95rem;
   font-weight: 300;
@@ -111,6 +145,10 @@ label {
 
 .small-text {
   width: 5rem;
+}
+
+.medium-text {
+  width: 10rem;
 }
 
 hr {
@@ -177,4 +215,5 @@ hr {
   input[name="state"] {
     width: 11.5rem;
   }
+
 }

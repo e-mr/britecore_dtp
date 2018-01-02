@@ -6,8 +6,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
   <link rel="stylesheet" href="britecore_dtp.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script src="britecore_dtp.js"></script>
 </head>
 
@@ -64,8 +66,9 @@
 
     <section class="column form-preview">
       <h2>Form Builder</h2>
+      <h3>Directions: Drag the desired Form Field into the Form Builder. Inside the Form Builder, reorder Form Field elements by clicking and dragging them to the desired area within the Form Builder.</h3>
       <hr>
-        <form>
+        <form id="sort-form">
           <div class="name">
             <label>
               First Name
@@ -75,6 +78,16 @@
               Last Name
               <input type="text" name="lastname">
             </label>
+            <div class="edit-fields">
+              <button class="field-edit">
+                <i class="fa fa-pencil" aria-hidden="true"></i>
+                Edit
+              </button>
+              <button class="field-delete">
+                <i class="fa fa-trash-o" aria-hidden="true"></i>
+                Delete
+              </button>
+            </div>
           </div>
 
           <div class="address">
@@ -99,21 +112,41 @@
               Zip Code
               <input class="small-text" type="text" name="zipcode">
             </label>
+            <div class="edit-fields">
+              <button class="field-edit">
+                <i class="fa fa-pencil" aria-hidden="true"></i>
+                Edit
+              </button>
+              <button class="field-delete">
+                <i class="fa fa-trash-o" aria-hidden="true"></i>
+                Delete
+              </button>
+            </div>
           </div>
 
-          <label>
-            Date of Birth
-            <input type="date" name="bday">
-          </label>
-          <button class="next">
-            Next
-            <i class="fa fa-angle-right" aria-hidden="true"></i>
-          </button>
+          <div class="birthday">
+            <label>
+              Date of Birth
+              <input class="medium-text" type="date" name="bday">
+            </label>
+            <div class="edit-fields">
+              <button class="field-edit">
+                <i class="fa fa-pencil" aria-hidden="true"></i>
+                Edit
+              </button>
+              <button class="field-delete">
+                <i class="fa fa-trash-o" aria-hidden="true"></i>
+                Delete
+              </button>
+            </div>
+          </div>
+
         </form>
+
       <div class="form-buttons">
         <button class="edit">
-          <i class="fa fa-pencil" aria-hidden="true"></i>
-          Edit Form
+          <i class="fa fa-eye" aria-hidden="true"></i>
+          Preview Form
         </button>
         <button class="save">
           <i class="fa fa-check" aria-hidden="true"></i>
