@@ -49,8 +49,8 @@ table {
 
 h1 {
   background: transparent url(http://demo.britecore.com/static/images/britecore-logo.png) no-repeat center center;
-  color: transparent;
   background-size: contain;
+  color: transparent;
   margin-left: 2rem;
 }
 
@@ -61,16 +61,16 @@ header {
 }
 
 h2 {
-  font-size: 1.3rem;
   color: #494949;
+  font-size: 1.3rem;
 }
 
 h3 {
-  font-size: 0.9rem;
   color: #017084;
-  margin-top: 0.8rem;
+  font-size: 0.9rem;
   font-style: italic;
   line-height: 1rem;
+  margin-top: 0.8rem;
 }
 
 h2, button, label{
@@ -82,30 +82,31 @@ h3, form, input {
 }
 
 .field, .form-preview {
-  padding: 2rem;
   background-color: #E6EEEF;
+  padding: 2rem;
 }
 
 button {
-  border-radius: 0.25rem;
-  border: solid #018298 0.04rem;
-  padding: 0.9rem;
-  margin-bottom: 0.75rem;
-  font-weight: 300;
-  font-size: 0.85rem;
-  text-decoration: none;
   background-color: #018298;
+  border: solid #018298 0.04rem;
+  border-radius: 0.25rem;
   color: #FFFFFF;
+  font-size: 0.85rem;
+  font-weight: 300;
+  margin-bottom: 0.75rem;
+  padding: 0.9rem;
+  text-decoration: none;
 }
 
 input {
-  padding:0.7rem;
-  border-radius: 0.25rem;
-  font-size:1.1rem;
-  width: 30rem;
   border: solid 0.04rem #A8A8A8;
-  margin-bottom: 1.25rem;
+  border-radius: 0.25rem;
   display: flex;
+  font-size:1.1rem;
+  margin-bottom: 1.25rem;
+  max-width: 100%;
+  padding:0.7rem;
+  width: 30rem;
 }
 
 .input-type {
@@ -113,26 +114,24 @@ input {
 }
 
 .edit-fields {
-  width: 100%;
   text-align: right;
+  width: 100%;
 }
 
 .field-edit, .field-delete {
   border-radius: 1.5rem;
+  font-size: 0.8rem;
   padding: 0.9rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  font-size: 0.8rem;
 }
 
 .field-edit {
-  display: inline-block;
-  margin-right: 0.5rem;
-  margin-bottom: 3rem;
   background-color: #008A00;
+  display: inline-block;
+  margin-bottom: 3rem;
+  margin-right: 0.5rem;
 }
-
-
 
 .field-delete {
   background-color: #B80000;
@@ -184,15 +183,15 @@ hr {
   }
 
   .field {
-    width:20%;
-    padding: 1.75rem;
     background-color: #DFDFDF;
+    padding: 1.75rem;
+    width:20%;
   }
 
   .form-preview {
-    width: 75%;
-    padding: 2rem;
     background-color: #E6EEEF;
+    padding: 2rem;
+    width: 75%;
   }
 
   .name, .address {
@@ -215,5 +214,4 @@ hr {
   input[name="state"] {
     width: 11.5rem;
   }
-
 }
